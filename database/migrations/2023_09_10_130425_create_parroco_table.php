@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('parroco', function (Blueprint $table) {
             $table->id();
+            $table->string('nombre');
+            $table->string('apellido');
+            $table->bigInteger('dpi');
+            $table->integer('estado');
             $table->timestamps();
         });
     }
